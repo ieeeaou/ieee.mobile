@@ -1,0 +1,130 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+  }
+
+:root {
+    --color-1: #022d58;
+    --color-2: #FFFFFF;
+    --location-color:red;
+    }
+
+body {
+    font-family: Arial, sans-serif;
+    background: url("images/background design.png");
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    letter-spacing: 2px;
+    color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 100vh;
+    margin-bottom: 50px;
+  }
+  
+  .content {
+    padding: 20px;
+    text-align: center;
+    flex: 1;
+  }
+  
+  .navbar {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: var(--color-1);
+    padding: 10px 0;
+    border-radius: 15px 15px 0 0;
+    box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.5);
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+  }
+  
+  .nav-item a{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    color: var(--color-2);
+    cursor: pointer;
+  }
+  
+  .nav-item .icon-container {
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: transparent;
+    border-radius: 50%;
+    margin-bottom: 5px;
+  }
+  
+  .nav-item.active .icon-container {
+    background-color: var(--color-2);
+    color: var(--color-1);
+  }
+
+  .nav-item.active a .nav-label {
+    color: var(--color-2);
+  }
+  
+  .nav-item .icon {
+    font-size: 20px;
+  }
+
+  .nav-item .icon svg{
+    height: 18px;
+    width: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    fill: var(--color-2);
+  }
+
+  .nav-item.active svg{
+    fill: var(--color-1);
+  }
+  
+  
+  .nav-label {
+    font-size: 0.9rem;
+    font-weight: normal;
+    margin-top: 5px;
+  }
+
+
+  /* content css */
+
+  section{
+    height: 70vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+ .svg-icon svg{
+  height: 50px;
+  width: 50px;
+  fill: var(--color-1);
+  margin-bottom: 20px;
+  }
+
+  .contain{
+    font-size: 25px;
+    font-weight: bold;
+    text-align: center;
+    color: var(--color-1);
+  }
+
+
+
+
+  @media only screen and (max-width: 768px) {
+}
+  

@@ -1,0 +1,217 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+  }
+
+:root {
+    --color-1: #022d58;
+    --color-2: #FFFFFF;
+    --location-color:red;
+    }
+
+body {
+    font-family: Arial, sans-serif;
+    background: url("images/background design.png");
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    letter-spacing: 2px;
+    color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 100vh;
+    margin-bottom: 50px;
+  }
+  
+  .content {
+    padding: 20px;
+    text-align: center;
+    flex: 1;
+  }
+  
+  .navbar {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: var(--color-1);
+    padding: 10px 0;
+    border-radius: 15px 15px 0 0;
+    box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.5);
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+  }
+  
+  .nav-item a{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    color: var(--color-2);
+    cursor: pointer;
+  }
+  
+  .nav-item .icon-container {
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: transparent;
+    border-radius: 50%;
+    margin-bottom: 5px;
+  }
+  
+  .nav-item.active .icon-container {
+    background-color: var(--color-2);
+    color: var(--color-1);
+  }
+
+  .nav-item.active a .nav-label {
+    color: var(--color-2);
+  }
+  
+  .nav-item .icon {
+    font-size: 20px;
+  }
+
+  .nav-item .icon svg{
+    height: 18px;
+    width: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    fill: var(--color-2);
+  }
+
+  .nav-item.active svg{
+    fill: var(--color-1);
+  }
+  
+  
+  .nav-label {
+    font-size: 0.9rem;
+    font-weight: normal;
+    margin-top: 5px;
+  }
+
+
+  /* content css */
+
+/* join section */
+
+main {
+  flex: 1;
+}
+
+.join-video{
+  margin: 100px 0px 100px 0px;
+  text-align: center;
+  color: var(--color-1);
+  font-weight: bold;
+  font-size: 30px;
+}
+
+.join-video button{
+  margin-top: 20px;
+  padding: 10px 20px;
+  color: var(--color-2);
+  background-color: var(--color-1);
+  font-weight: bold;
+  border-radius: 5px;
+}
+
+.video-overlay {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.8);
+  z-index: 40;
+  justify-content: center;
+  align-items: center;
+}
+
+.video-overlay video {
+  max-width: 80%;
+  max-height: 80%;
+}
+
+.video-overlay:target {
+  display: flex;
+}
+
+.close-btn {
+  position: fixed;
+  top: 10px;
+  right: 10px;
+  font-size: 32px;
+  color: var(--color-2);
+  text-decoration: none;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  padding: 8px 12px;
+  transition: color 0.3s;
+}
+
+#join-section {
+  padding: 20px 20px;
+  margin-top: 120px;
+  margin-bottom: 50px;
+  text-align: center;
+}
+
+#join-section .container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+.membership-card {
+  width: 800px;
+  background-color: var(--color-2);
+  padding: 50px;
+  border: 3px solid var(--color-1);
+  border-radius: 5px;
+}
+
+.membership-card h2 {
+  color: var(--color-1);
+  margin-bottom: 20px;
+  font-weight: bold;
+  font-size: 40px;
+}
+
+.membership-card p {
+  font-size: 20px;
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+
+.membership-card button {
+  color: var(--color-2);
+  background-color: var(--color-1);
+  padding: 20px 40px;
+  border-radius: 5px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.membership-card button a{
+  color: var(--color-2);
+}
+
+
+
+
+  @media only screen and (max-width: 768px) {
+}
+  

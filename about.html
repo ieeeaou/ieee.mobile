@@ -1,0 +1,473 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Custom Navbar</title>
+    <link rel="stylesheet" href="aboutstyles.css" />
+    <script src="script.js"></script>
+  </head>
+  <body>
+<!-- Main Content -->
+<section id="aou-map">
+  <div id="map-container">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 600">
+      <path
+      class="country-pin"
+      id="country-pin_lebanon"
+      data-name="Lebanon"
+      d="M10 20C10 14.48 14.48 10 20 10s10 4.48 10 10c0 7.73-10 20-10 20s-10-12.27-10-20z M20 25a4 4 0 1 0 0-8 4 4 0 0 0 0 8z"
+      transform="translate(650, 35) scale(1)"
+    ></path>
+      <path
+      class="country-pin"
+      id="country-pin_kuwait"
+      data-name="Kuwait"
+      d="M10 20C10 14.48 14.48 10 20 10s10 4.48 10 10c0 7.73-10 20-10 20s-10-12.27-10-20z M20 25a4 4 0 1 0 0-8 4 4 0 0 0 0 8z"
+      transform="translate(800, 100) scale(1)"
+    ></path>
+      <path
+        class="country-pin"
+        data-name="Egypt"
+        d="M10 20C10 14.48 14.48 10 20 10s10 4.48 10 10c0 7.73-10 20-10 20s-10-12.27-10-20z M20 25a4 4 0 1 0 0-8 4 4 0 0 0 0 8z"
+        transform="translate(565, 130) scale(1.5)"
+      ></path>
+      <path
+        class="country-pin"
+        data-name="Saudi Arabia"
+        d="M10 20C10 14.48 14.48 10 20 10s10 4.48 10 10c0 7.73-10 20-10 20s-10-12.27-10-20z M20 25a4 4 0 1 0 0-8 4 4 0 0 0 0 8z"
+        transform="translate(750, 160) scale(1.5)"
+      ></path>
+      <path
+        class="country-pin"
+        data-name="Jordan"
+        d="M10 20C10 14.48 14.48 10 20 10s10 4.48 10 10c0 7.73-10 20-10 20s-10-12.27-10-20z M20 25a4 4 0 1 0 0-8 4 4 0 0 0 0 8z"
+        transform="translate(660, 85) scale(1)"
+      ></path>
+      <path
+        class="country-pin"
+        data-name="Bahrain"
+        d="M10 20C10 14.48 14.48 10 20 10s10 4.48 10 10c0 7.73-10 20-10 20s-10-12.27-10-20z M20 25a4 4 0 1 0 0-8 4 4 0 0 0 0 8z"
+        transform="translate(833, 145) scale(1)"
+      ></path>
+      <!-- <path
+        class="country-pin"
+        data-name="Sudan"
+        d="M10 20C10 14.48 14.48 10 20 10s10 4.48 10 10c0 7.73-10 20-10 20s-10-12.27-10-20z M20 25a4 4 0 1 0 0-8 4 4 0 0 0 0 8z"
+        transform="translate(580, 280) scale(1.5)"
+      ></path> -->
+      <!-- <path
+      class="country-pin"
+      data-name="Palestine"
+      d="M10 20C10 14.48 14.48 10 20 10s10 4.48 10 10c0 7.73-10 20-10 20s-10-12.27-10-20z M20 25a4 4 0 1 0 0-8 4 4 0 0 0 0 8z"
+      transform="translate(647, 60) scale(1)"
+    ></path> -->
+      <path
+        class="country-pin"
+        data-name="Oman"
+        d="M10 20C10 14.48 14.48 10 20 10s10 4.48 10 10c0 7.73-10 20-10 20s-10-12.27-10-20z M20 25a4 4 0 1 0 0-8 4 4 0 0 0 0 8z"
+        transform="translate(910, 225) scale(1.5)"
+      ></path>
+    </svg>
+
+    <!-- Tooltip for country names -->
+    <div id="tooltip"></div>
+  </div>
+</section>
+
+<!-- About IEEE Section -->
+<section id="about-ieee" class="ieee-section">
+  <div class="ieee-section-container">
+    <div class="ieee-content">
+      <h2>About IEEE</h2>
+      <p>
+        IEEE (Institute of Electrical and Electronics Engineers) is the
+        world's largest technical professional organization dedicated to
+        advancing technology for the benefit of humanity. With members
+        spanning across various technical fields, IEEE works to promote
+        innovation, educate the public, and foster growth in domains like
+        electrical engineering, computer science, and telecommunications.
+      </p>
+      <a href="#continueOverlayAbout">
+        <button>Continue Reading...</button>
+      </a>
+    </div>
+  </div>
+  <div id="continueOverlayAbout" class="continue-overlay">
+    <a href="#" class="close-btn">×</a>
+    <p>
+      The Institute of Electrical and Electronics Engineers (IEEE) is a
+      global professional organization dedicated to advancing innovation and
+      technological excellence for the benefit of humanity. IEEE's mission
+      is "to foster technological innovation and excellence for the benefit
+      of humanity," and it serves as a hub for professionals, students, and
+      experts in fields like electrical engineering, computer science,
+      information technology, telecommunications, aerospace, and robotics.
+      IEEE is best known for developing technical standards that enable
+      compatibility, safety, and interoperability across industries. Some of
+      its most influential standards include those for Ethernet (IEEE
+      802.3), Wi-Fi (IEEE 802.11), and Bluetooth, which serve as
+      foundational technologies for communication networks and devices
+      worldwide. These standards ensure that products and services meet
+      high-quality benchmarks, making IEEE a trusted leader in shaping
+      industry standards. In addition to standards development, IEEE offers
+      extensive resources for professional growth, education, and knowledge
+      sharing. Through platforms like the IEEE Xplore Digital Library, IEEE
+      provides access to research papers, journals, and technical articles.
+      The organization also hosts conferences, webinars, and workshops,
+      supporting lifelong learning and keeping members up-to-date with the
+      latest advancements in their fields. IEEE is also committed to
+      promoting diversity, equity, and inclusion within engineering and
+      technology. It actively supports initiatives aimed at broadening
+      access to STEM careers and fostering a diverse workforce, recognizing
+      that varied perspectives drive innovation. Through its comprehensive
+      resources and global reach, IEEE continues to influence and support
+      technological progress, enhancing quality of life and addressing
+      pressing global challenges.
+    </p>
+  </div>
+</section>
+
+<!-- IEEE History Section -->
+<section id="ieee-history" class="ieee-section">
+  <div class="ieee-section-container">
+    <div class="ieee-content">
+      <h2>IEEE History</h2>
+      <p>
+        Founded in 1963, IEEE was formed from the merging of the American
+        Institute of Electrical Engineers (AIEE) and the Institute of Radio
+        Engineers (IRE). Since then, IEEE has grown to become a global
+        leader in technology and engineering, supporting numerous
+        conferences, journals, and technical standards that shape industries
+        worldwide.
+      </p>
+      <a href="#continueOverlayHistory">
+        <button>Continue Reading...</button>
+      </a>
+    </div>
+  </div>
+  <div id="continueOverlayHistory" class="continue-overlay">
+    <a href="#" class="close-btn">×</a>
+    <p>
+      The Institute of Electrical and Electronics Engineers (IEEE) was
+      founded in 1963 through the merger of two earlier organizations: the
+      American Institute of Electrical Engineers (AIEE) and the Institute of
+      Radio Engineers (IRE). The creation of IEEE consolidated these two
+      groups' efforts in the rapidly growing fields of electrical
+      engineering and electronics, allowing for greater collaboration and a
+      unified approach to the technological challenges of the time.
+      <br><br> Early Years (1884–1963) <br><br>
+      Before the formation of IEEE, the AIEE was
+      established in 1884 and was focused on advancing the electrical
+      engineering profession. It played a pivotal role in the development of
+      electrical technologies like power generation, distribution, and
+      electric motor systems. At the same time, the IRE, founded in 1912,
+      was dedicated to the study of radio and communication technologies,
+      which were emerging as crucial fields due to advancements in wireless
+      communications and radio broadcasting. As both organizations expanded
+      their areas of interest and membership, it became clear that a unified
+      body could provide a stronger platform for innovation and professional
+      development. The growing influence of electronics, telecommunications,
+      and computing also highlighted the need for a broader scope than each
+      organization could individually address.
+      <br><br> The Merger and Growth(1963–1980s) <br><br> 
+      In 1963, the AIEE and IRE officially merged to form IEEE.
+      This merger allowed for the integration of electrical engineering with
+      new, cutting-edge fields like electronics, computer science, and
+      telecommunications. With this unified vision, IEEE quickly became a
+      leading force in the development of industry standards, professional
+      education, and research in these rapidly advancing sectors. During
+      this period, IEEE expanded its technical and professional activities,
+      establishing a global presence. IEEE organized conferences and
+      symposia, published influential research in technical journals, and
+      helped set standards that are still widely used today, such as the
+      IEEE 802 series for networking standards (including Ethernet and
+      Wi-Fi).
+      <br><br> International Expansion and Innovation (1990s–2000s) <br><br>
+      In the 1990s, IEEE's reach extended beyond the United States, and the
+      organization grew to become a truly global entity with over 400,000
+      members in more than 160 countries. This global expansion was fueled
+      by the rapid pace of technological advancements in areas such as
+      telecommunications, computers, and the internet. IEEE played a key
+      role in the development of key standards, including those for the
+      internet and wireless communication, helping to shape the
+      infrastructure of the modern digital world. The organization also
+      continued to evolve its focus to include emerging fields like
+      artificial intelligence, robotics, and renewable energy. IEEE became
+      involved in the development of standards for these industries, further
+      solidifying its position as a global leader in technology.
+      <br><br> Recent Developments (2010s–Present) <br><br>
+      Today, IEEE continues to be a leading authority in the development of technology standards and a key
+      resource for technical education and professional development. The
+      IEEE Xplore Digital Library, established in the 2000s, offers a vast
+      collection of research papers and technical resources. IEEE has also
+      been actively engaged in promoting diversity and inclusion within STEM
+      (Science, Technology, Engineering, and Mathematics), and its
+      initiatives seek to inspire and support the next generation of
+      innovators. IEEE’s continued emphasis on the convergence of
+      engineering, technology, and societal challenges ensures that the
+      organization remains at the forefront of shaping technology for the
+      future. Through its ongoing global reach and commitment to addressing
+      emerging issues in various fields, IEEE continues to fulfill its
+      mission of advancing technology for humanity.
+    </p>
+  </div>
+</section>
+
+<!-- Team Section -->
+<section class="team-section">
+  <div class="team-section-container">
+    <h2>Meet Our Team</h2>
+    <div class="team-grid">
+      <div class="team-member">
+        <h3>Dr. Khouloud Samrout</h3>
+        <h4>Coordinator</h4>
+        <p>
+          Typically, the Coordinator oversees specific IEEE initiatives such
+          as educational programs, membership development, or student
+          activities. They assess community needs, plan events, manage
+          resources for their area, and report progress to the committee to
+          enhance member engagement.
+        </p>
+      </div>
+      <div class="team-member">
+        <h3>Shaymaa Jawish</h3>
+        <h4>Chairperson</h4>
+        <p>
+          The Chair oversees the committee's direction, sets meeting
+          agendas, and leads discussions to ensure the chapter meets its
+          goals. They work to promote IEEE's mission, represent the chapter
+          at events, and maintain communications with higher IEEE
+          authorities.
+        </p>
+      </div>
+      <div class="team-member">
+        <h3>Shady Masry</h3>
+        <h4>Vice-Chairperson</h4>
+        <p>
+          The Vice-Chair supports the Chair by managing delegated
+          responsibilities and may lead meetings in the Chair's absence.
+          They also coordinate programs or initiatives and support the
+          chapter’s operational needs.
+        </p>
+      </div>
+      <div class="team-member">
+        <h3>Mohamad Kouzi</h3>
+        <h4>Secretary</h4>
+        <p>
+          The Secretary documents meeting minutes, circulates agendas, and
+          maintains committee records. They handle official correspondence
+          and ensure all reports are submitted to IEEE's Regional Activities
+          Department.
+        </p>
+      </div>
+      <div class="team-member">
+        <h3>Tony Al Chediac</h3>
+        <h4>Webmaster</h4>
+        <p>
+          This role involves maintaining the chapter’s website, ensuring
+          current content, and promoting IEEE's activities online. The
+          Webmaster also manages digital resources and handles member
+          communications.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+
+
+
+
+
+
+
+
+    <!-- Bottom Navigation Bar -->
+    <footer class="navbar">
+      <div class="nav-item">
+        <a href="index.html">
+        <div class="icon-container">
+          <span class="icon">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              x="0px"
+              y="0px"
+              width="100"
+              height="100"
+              viewBox="0 0 50 50"
+            >
+              <path
+                d="M 25 1.0507812 C 24.7825 1.0507812 24.565859 1.1197656 24.380859 1.2597656 L 1.3808594 19.210938 C 0.95085938 19.550938 0.8709375 20.179141 1.2109375 20.619141 C 1.5509375 21.049141 2.1791406 21.129062 2.6191406 20.789062 L 4 19.710938 L 4 46 C 4 46.55 4.45 47 5 47 L 19 47 L 19 29 L 31 29 L 31 47 L 45 47 C 45.55 47 46 46.55 46 46 L 46 19.710938 L 47.380859 20.789062 C 47.570859 20.929063 47.78 21 48 21 C 48.3 21 48.589063 20.869141 48.789062 20.619141 C 49.129063 20.179141 49.049141 19.550938 48.619141 19.210938 L 25.619141 1.2597656 C 25.434141 1.1197656 25.2175 1.0507812 25 1.0507812 z M 35 5 L 35 6.0507812 L 41 10.730469 L 41 5 L 35 5 z"
+              ></path>
+            </svg>
+          </span>
+        </div>
+        <span class="nav-label">HOME</span>
+        </a>
+      </div>
+      <div class="nav-item active">
+        <a href="about.html">
+        <div class="icon-container">
+          <span class="icon">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              x="0px"
+              y="0px"
+              width="100"
+              height="100"
+              viewBox="0 0 50 50"
+            >
+              <path
+                d="M 25 1 C 11.214844 1 0 10.960938 0 23.199219 C 0 29.113281 2.574219 34.644531 7.261719 38.835938 C 6.394531 41.394531 4.171875 43.15625 2.519531 44.464844 C 1.003906 45.664063 -0.09375 46.53125 0.234375 47.757813 L 0.339844 48.160156 L 0.699219 48.367188 C 1.609375 48.886719 2.820313 49.152344 4.308594 49.152344 C 9.257813 49.152344 16.371094 46.3125 19.503906 44.945313 C 21.285156 45.316406 23.054688 45.5 24.898438 45.5 C 38.6875 45.5 49.898438 35.539063 49.898438 23.300781 C 49.898438 11.003906 38.730469 1 25 1 Z M 26.601563 34 C 26.601563 34.199219 26.5 34.398438 26.199219 34.398438 L 23.902344 34.398438 L 23.902344 34.300781 C 23.699219 34.300781 23.5 34.199219 23.5 33.902344 L 23.5 20.5 C 23.5 20.300781 23.601563 20.101563 23.902344 20.101563 L 26.199219 20.101563 C 26.402344 20.101563 26.601563 20.199219 26.601563 20.5 Z M 26.601563 15.800781 C 26.601563 16 26.5 16.199219 26.199219 16.199219 L 23.800781 16.199219 C 23.601563 16.199219 23.402344 16.101563 23.402344 15.800781 L 23.402344 13.199219 C 23.402344 13 23.5 12.800781 23.800781 12.800781 L 26.199219 12.800781 C 26.402344 12.800781 26.601563 12.898438 26.601563 13.199219 Z"
+              ></path>
+            </svg>
+          </span>
+        </div>
+        <span class="nav-label">ABOUT</span>
+        </a>
+      </div>
+      <div class="nav-item">
+        <a href="events.html">
+        <div class="icon-container">
+          <span class="icon">
+            <?xml version="1.0" ?>
+            <?xml version="1.0" ?>
+<?xml version="1.0" ?><svg id="Layer_1" style="enable-background:new 0 0 512 512;" version="1.1" viewBox="0 0 512 512" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><g><g><g><path d="M110.6,487.9c-2.2,0-4.3-0.7-6-2c-2.4-1.9-3.9-4.8-3.9-7.8V104.3c0-5.5,4.4-9.9,9.9-9.9h385.5c5.5,0,9.9,4.4,9.9,9.9     v236.9c0,24.6-16.6,46.1-40.3,52.4l-352.5,93.9C112.3,487.8,111.5,487.9,110.6,487.9z M120.5,114.2v351l340.1-90.6     c15.1-4,25.7-17.7,25.7-33.4V114.2H120.5z"/></g><g><path d="M60.3,492.6c-13.4,0-26.5-5-36.5-14.1C12.5,468.2,6,453.6,6,438.3V168.8c0-4.2,2.6-7.9,6.6-9.3l94.7-33.6     c5.1-1.8,10.8,0.9,12.6,6c1.8,5.1-0.9,10.8-6,12.6l-88.2,31.3v262.5c0,9.9,4,18.9,11.3,25.6c7.3,6.6,16.7,9.8,26.5,8.8l46-4.5     c5.4-0.5,10.2,3.4,10.8,8.9c0.5,5.4-3.4,10.2-8.9,10.8l-46,4.5C63.8,492.5,62,492.6,60.3,492.6z" id="XMLID_21_"/></g><g><path d="M409.3,114.2c-5.5,0-9.9-4.4-9.9-9.9v-61l-196.4,69.6c-5.1,1.8-10.8-0.9-12.6-6c-1.8-5.1,0.9-10.8,6-12.6     L406,20c3-1.1,6.4-0.6,9,1.2c2.6,1.9,4.2,4.9,4.2,8.1v75C419.2,109.8,414.7,114.2,409.3,114.2z" id="XMLID_20_"/></g><g><path d="M235.8,203.6H223l-25.7-43l-0.3,0v43h-12.8v-63.7h12.8l25.7,42.9l0.3,0v-42.9h12.8V203.6z"/><path d="M284,175.6h-23.6v18.2h28.1v9.8h-40.9v-63.7h40.8v9.9h-28v16H284V175.6z"/><path d="M347.7,183.2h0.3l8.4-43.3h13.2l-14.9,63.7h-11.9l-11.7-42h-0.3l-11.7,42h-11.9l-14.9-63.7h13.2l8.5,43.2h0.3l11.5-43.2     h10.3L347.7,183.2z"/><path d="M409.7,187c0-2.5-0.9-4.4-2.6-5.9c-1.7-1.5-4.7-2.9-9-4.2c-7.4-2.2-12.9-4.8-16.7-7.8c-3.8-3-5.7-7.1-5.7-12.3     c0-5.2,2.1-9.5,6.4-12.8c4.3-3.3,9.8-5,16.4-5c7.1,0,12.7,1.8,17.1,5.3c4.3,3.6,6.4,8.2,6.2,14l-0.1,0.3h-12.4     c0-3.2-1-5.6-2.9-7.3c-1.9-1.7-4.6-2.6-8.1-2.6c-3.2,0-5.6,0.8-7.3,2.3c-1.7,1.5-2.6,3.5-2.6,5.8c0,2.2,0.9,3.9,2.8,5.3     c1.9,1.4,5.1,2.9,9.7,4.4c7,2,12.3,4.6,16,7.8c3.7,3.2,5.5,7.4,5.5,12.6c0,5.5-2.1,9.8-6.4,12.9c-4.3,3.2-9.9,4.7-16.9,4.7     c-6.9,0-12.7-1.7-17.7-5.1c-4.9-3.4-7.3-8.5-7.2-15.3l0.1-0.3h12.4c0,3.8,1.1,6.5,3.3,8.3c2.2,1.8,5.2,2.7,9,2.7     c3.4,0,6-0.7,7.8-2.1C408.8,191.3,409.7,189.4,409.7,187z"/></g><g><rect height="9.9" id="XMLID_15_" width="230.6" x="184.3" y="218.5"/></g><g><g><rect height="9.9" id="XMLID_14_" width="64.2" x="184.3" y="270"/></g><g><rect height="9.9" id="XMLID_13_" width="64.2" x="184.3" y="297.3"/></g><g><rect height="9.9" id="XMLID_12_" width="64.2" x="184.3" y="324.7"/></g><g><rect height="9.9" id="XMLID_11_" width="64.2" x="184.3" y="352"/></g><g><rect height="9.9" id="XMLID_10_" width="64.2" x="184.3" y="379.3"/></g><g><rect height="9.9" id="XMLID_9_" width="64.2" x="184.3" y="406.7"/></g></g><g><g><rect height="9.9" id="XMLID_8_" width="64.2" x="264.4" y="270"/></g><g><rect height="9.9" id="XMLID_7_" width="64.2" x="264.4" y="297.3"/></g><g><rect height="9.9" id="XMLID_6_" width="64.2" x="264.4" y="324.7"/></g><g><rect height="9.9" id="XMLID_5_" width="64.2" x="264.4" y="352"/></g><g><rect height="9.9" id="XMLID_4_" width="64.2" x="264.4" y="379.3"/></g></g><path d="M412.4,395.5c0.9,0,1.7,0.1,2.5,0.2V270h-71.4v140.5H398C398,403,402.8,395.5,412.4,395.5z" id="XMLID_3_"/></g><polygon id="XMLID_2_" points="408,106.3 408,33.3 231,94  "/><path d="M109,139l-97,32.8v273.5c0,0,22,71,97,29V139z" id="XMLID_1_"/></g></svg>
+          </span>
+        </div>
+        <span class="nav-label">EVENTS</span>
+        </a>
+      </div>
+      <div class="nav-item">
+        <a href="join.html">
+        <div class="icon-container">
+          <span class="icon">
+            <?xml version="1.0" ?>
+            <?xml version="1.0" ?><svg
+              id="Layer_1_1_"
+              style="enable-background: new 0 0 64 64"
+              version="1.1"
+              viewBox="0 0 64 64"
+              xml:space="preserve"
+              xmlns="http://www.w3.org/2000/svg"
+              xmlns:xlink="http://www.w3.org/1999/xlink"
+            >
+              <path
+                d="M34.499,30.332l1.002,1.731C37.659,30.814,39,28.491,39,26c0-3.86-3.141-7-7-7s-7,3.14-7,7c0,2.35,1.17,4.531,3.129,5.833  l1.107-1.665C27.836,29.237,27,27.679,27,26c0-2.757,2.243-5,5-5s5,2.243,5,5C37,27.779,36.042,29.439,34.499,30.332z"
+              />
+              <path
+                d="M19,26c0,4.364,2.172,8.414,5.811,10.833l1.107-1.665C22.839,33.12,21,29.693,21,26c0-6.065,4.935-11,11-11s11,4.935,11,11  c0,3.693-1.839,7.12-4.918,9.167l1.107,1.666C42.828,34.414,45,30.364,45,26c0-7.168-5.832-13-13-13S19,18.832,19,26z"
+              />
+              <path
+                d="M56,27c0-0.7-0.031-1.403-0.092-2.088l-1.992,0.177C53.972,25.715,54,26.358,54,27c0,7.714-3.934,14.734-10.523,18.777  l1.047,1.705C51.71,43.072,56,35.416,56,27z"
+              />
+              <path
+                d="M32,5c4.446,0,8.729,1.323,12.385,3.825l1.129-1.65C41.524,4.443,36.852,3,32,3c-2.869,0-5.678,0.501-8.348,1.491  l0.695,1.875C26.794,5.459,29.369,5,32,5z"
+              />
+              <path
+                d="M9.492,18.652C8.502,21.319,8,24.128,8,27c0,8.418,4.291,16.074,11.478,20.478l1.045-1.705C13.934,41.735,10,34.717,10,27  c0-2.634,0.46-5.208,1.367-7.652L9.492,18.652z"
+              />
+              <path
+                d="M37,42c0-2.419-1.718-4.436-4-4.899V29c1.163-0.413,2-1.512,2-2.816c0-1.657-1.343-3-3-3s-3,1.343-3,3  c0,1.304,0.837,2.403,2,2.816v8.101c-2.282,0.463-4,2.48-4,4.899c0,2.761,2.239,5,5,5S37,44.761,37,42z"
+              />
+              <path
+                d="M23,51v11h18V51c0-2.209-1.612-4-3.6-4H32h-5.4C24.612,47,23,48.791,23,51z"
+              />
+              <path
+                d="M61,15c0-4.418-3.582-8-8-8s-8,3.582-8,8s3.582,8,8,8S61,19.418,61,15z M53,22c-1.955,0-3.72-0.803-4.99-2.095  C48.061,17.741,49.823,16,52,16h1c-1.657,0-3-1.343-3-3s1.343-3,3-3s3,1.343,3,3s-1.343,3-3,3h1c2.177,0,3.939,1.741,3.99,3.905  C56.72,21.197,54.955,22,53,22z"
+              />
+              <path
+                d="M15,18c4.418,0,8-3.582,8-8s-3.582-8-8-8s-8,3.582-8,8S10.582,18,15,18z M14,11h1c-1.657,0-3-1.343-3-3s1.343-3,3-3  s3,1.343,3,3s-1.343,3-3,3h1c2.177,0,3.939,1.741,3.99,3.905C18.72,16.197,16.955,17,15,17c-1.955,0-3.72-0.803-4.99-2.095  C10.061,12.741,11.823,11,14,11z"
+              />
+            </svg>
+          </span>
+        </div>
+        <span class="nav-label">JOIN</span>
+        </a>
+      </div>
+      <div class="nav-item">
+        <a href="contact.html">
+        <div class="icon-container">
+          <span class="icon">
+            <?xml version="1.0" ?><svg
+              height="24"
+              viewBox="0 0 24 24"
+              width="24"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M21 2H6a2 2 0 0 0-2 2v3H2v2h2v2H2v2h2v2H2v2h2v3a2 2 0 0 0 2 2h15a1 1 0 0 0 1-1V3a1 1 0 0 0-1-1zm-8 2.999c1.648 0 3 1.351 3 3A3.012 3.012 0 0 1 13 11c-1.647 0-3-1.353-3-3.001 0-1.649 1.353-3 3-3zM19 18H7v-.75c0-2.219 2.705-4.5 6-4.5s6 2.281 6 4.5V18z"
+              />
+            </svg>
+          </span>
+        </div>
+        <span class="nav-label">CONTACT</span>
+        </a>
+      </div>
+    </footer>
+
+    <script>
+      const countries = document.querySelectorAll(".country-pin");
+      const tooltip = document.getElementById("tooltip");
+      let currentIndex = 0;
+      let intervalId;
+
+      function displayCountryTooltip(country) {
+        tooltip.textContent = country.getAttribute("data-name");
+        const rect = country.getBoundingClientRect();
+        const isMobile = window.innerWidth < 768;
+        
+        tooltip.style.left = `${
+          window.scrollX +
+          rect.left -
+          (isMobile ? tooltip.offsetWidth / 1 : tooltip.offsetWidth + 20)
+        }px`;
+        tooltip.style.top = `${
+          window.scrollY +
+          rect.top -
+          (isMobile ? tooltip.offsetHeight + 50 : 175)
+        }px`;
+        tooltip.style.display = "block";
+      }
+
+      function cycleTooltips() {
+        const country = countries[currentIndex];
+        displayCountryTooltip(country);
+        currentIndex = (currentIndex + 1) % countries.length;
+      }
+      function startTooltipCycle() {
+        intervalId = setInterval(cycleTooltips, 500);
+      }
+
+      function stopTooltipCycle() {
+        clearInterval(intervalId);
+      }
+      countries.forEach((country) => {
+        country.addEventListener("mouseenter", () => {
+          stopTooltipCycle();
+          displayCountryTooltip(country);
+        });
+        country.addEventListener("mouseleave", () => {
+          tooltip.style.display = "none";
+          startTooltipCycle();
+        });
+      });
+      startTooltipCycle();
+    </script>
+
+    <script>
+      var loader = document.getElementById("preloader");
+      window.addEventListener("load", function () {
+        loader.classList.add("fade-out");
+        setTimeout(function () {
+          loader.style.display = "none";
+        }, 500);
+      });
+    </script>
+
+
+  </body>
+</html>
