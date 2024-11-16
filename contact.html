@@ -8,6 +8,12 @@
     <script src="script.js"></script>
   </head>
   <body>
+
+    <div id="preloader">
+      <img src="images/ieeegifxback.gif" alt="">
+    </div>
+
+
 <!-- Main Content -->
 
 
@@ -180,6 +186,18 @@
         </a>
       </div>
     </footer>
+
+
+    <script>
+      var loader = document.getElementById("preloader");
+      window.addEventListener("load", function () {
+        loader.classList.add("fade-out");
+        setTimeout(function () {
+          loader.style.display = "none";
+        }, 500);
+      });
+    </script>
+
 
   </body>
 </html>
