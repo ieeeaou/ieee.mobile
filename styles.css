@@ -61,7 +61,7 @@ body {
     align-items: center;
     background-color: transparent;
     border-radius: 50%;
-    margin-bottom: 5px;
+    margin-bottom: 15px;
   }
   
   .nav-item.active .icon-container {
