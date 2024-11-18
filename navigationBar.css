@@ -33,7 +33,7 @@ footer {
 }
 
 .footer-navbar a i {
-  font-size: 30px;
+  font-size: 20px;
   margin-bottom: 5px;
   transition: all 0.3s ease;
   display: flex;
@@ -65,7 +65,7 @@ footer {
   }
 
   .footer-navbar a i {
-    font-size: 16px;
+    font-size: 26px;
     width: 35px;
     height: 35px;
   }
