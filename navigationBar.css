@@ -43,7 +43,7 @@ footer {
   background-color: transparent;
   color: white;
   transition: all 0.3s ease;
-line-height: 0;
+  margin-bottom: 5px;
 }
 
 .footer-navbar a.active i {
