@@ -65,12 +65,6 @@ footer {
     font-weight: bold;
   }
 
-.footer-navbar a i{
-display:flex;
-justify-content:center;
-align-items:center;
-}
-
   .footer-navbar a i {
     font-size: 20px;
     width: 35px;
