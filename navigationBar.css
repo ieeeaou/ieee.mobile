@@ -61,7 +61,7 @@ footer {
 
 @media (max-width: 480px) {
   .footer-navbar a {
-    font-size: 12px;
+    font-size: 14px;
   }
 
   .footer-navbar a i {
