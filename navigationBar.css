@@ -43,26 +43,24 @@ footer {
 }
 
 .footer-navbar a i {
-  font-size: 20px;
-  margin-bottom: 5px;
+  font-size: 20px; /* Adjust as needed */
+  margin: 0; /* Remove margin */
   transition: all 0.3s ease;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 40px;
-  height: 40px;
-  border-radius: 50%;
+  width: 40px; /* Circle width */
+  height: 40px; /* Circle height */
+  border-radius: 50%; /* Make it circular */
+  background-color: transparent; /* Background color */
+  color: white; /* Icon color */
+  display: flex; /* Use flexbox */
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically */
+  line-height: 40px; /* Match height for vertical centering */
 }
 
 .footer-navbar a.active i {
   background-color: #FFFFFF;
   color: #022D58;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
-}
-
-.footer-navbar a i {
-  background-color: transparent;
-  color: white;
 }
 
 .footer-navbar a:hover i {
