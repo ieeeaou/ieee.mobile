@@ -1,0 +1,102 @@
+footer{
+    z-index: 200;
+}
+
+.footer-navbar {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: #022D58;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border-radius: 15px 15px 0 0;
+    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.footer-navbar a {
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    transition: all 0.3s ease;
+    position: relative;
+    padding: 12px 12px;
+    display: block;
+}
+
+.footer-navbar a i {
+    font-size: 20px;
+    margin-bottom: 10px;
+    transition: all 0.3s ease;
+}
+
+.footer-navbar a.active i {
+    background-color: #FFFFFF;
+    color: #022D58;
+    border-radius: 50%;
+    padding: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+.footer-navbar a i {
+    background-color: transparent;
+    color: white;
+    border-radius: 50%;
+    padding: 12px;
+}
+
+
+
+  /* header */
+
+  header{
+    top: 0;
+    position: fixed;
+    width: 100%;
+    z-index: 200;
+  }
+
+  .header-container{
+    background-color: var(--color-1);
+    width: 100%;
+    padding: 20px 20px;
+    color: var(--color-2);
+    font-weight: 900;
+    font-size: 20px;
+    border-radius: 0 0 15px 15px;
+  }
+
+
+
+  /* preloader */
+
+  #preloader {
+    background: url('images/background design.png') no-repeat center center;
+    background-size: cover;
+    height: 100vh;
+    width: 100%;
+    position: fixed;
+    z-index: 100;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  #preloader img {
+    height: 10%;
+    max-width: 100%;
+    object-fit: contain;
+  }
+  
+  #preloader.fade-out {
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.5s ease, visibility 0.5s ease;
+  }
+  
+  @media only screen and (max-width: 768px) {
+    #preloader {
+      height: 100vh;
+    }
+  }
