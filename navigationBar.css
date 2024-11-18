@@ -1,16 +1,26 @@
 :root {
+
   --color-1: #022d58;
   --color-2: #FFFFFF;
   --location-color:red;
   }
 
+body, html {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 footer {
   z-index: 200;
+  margin: 0;
+  padding: 0;
 }
 
 .footer-navbar {
   position: fixed;
   bottom: 0;
+  left: 0;
   width: 100%;
   background-color: #022D58;
   display: flex;
@@ -33,17 +43,15 @@ footer {
 }
 
 .footer-navbar a i {
+  font-size: 20px;
+  margin-bottom: 5px;
+  transition: all 0.3s ease;
   display: flex;
   justify-content: center;
   align-items: center;
-  font-size: 20px;
-  width: 35px;
-  height: 35px;
+  width: 40px;
+  height: 40px;
   border-radius: 50%;
-  background-color: transparent;
-  color: white;
-  transition: all 0.3s ease;
-  margin-bottom: 5px;
 }
 
 .footer-navbar a.active i {
@@ -64,7 +72,7 @@ footer {
 @media (max-width: 480px) {
   .footer-navbar a {
     font-size: 14px;
-    font-weight: bold;
+    font-weight:bold;
   }
 
   .footer-navbar a i {
@@ -73,7 +81,6 @@ footer {
     height: 35px;
   }
 }
-
 
 
 
