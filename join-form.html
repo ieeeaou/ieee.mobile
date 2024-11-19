@@ -31,41 +31,40 @@
 
 <!-- Main Content -->
 
-
 <section id="join-form">
   <div class="form-container">
       <h1>Personal Information JOIN Form</h1>
-      <h2 id="membershipTitle">Standard JOIN</h2>
+      <h2 id="membershipTitle">Renew</h2>
 
       <form method="POST" id="form">
         <input type="hidden" name="access_key" value="cbe4e58b-5b63-425a-9926-e90636b5df5a">
-        <input type="hidden" name="subject" value="New IEEE JOIN FORM website">
+        <input type="hidden" name="subject" id="subject" value="New IEEE RENEW FORM website">
 
           <div class="form-group">
               <div class="name-group">
                   <div class="contentform">
                       <label for="name">Name:</label>
-                      <input type="text" id="name" name="name" required>
+                      <input type="text" id="name" name="name" placeholder="First Name" required>
                   </div>
                   <div class="contentform">
                       <label for="last-name">Last Name:</label>
-                      <input type="text" id="last-name" name="last-name" required>
+                      <input type="text" id="last-name" name="last-name" placeholder="Last Name" required>
                   </div>
               </div>
           </div>
 
           <div class="form-group">
               <label for="father-name">Father Name:</label>
-              <input type="text" id="father-name" name="father-name" required>
+              <input type="text" id="father-name" name="father-name" placeholder="Father Name" required>
           </div>
 
           <div class="form-group">
               <label for="email-address">Email Address:</label>
-              <input type="email" id="email-address" name="email-address" required>
+              <input type="email" id="email-address" name="email-address" placeholder="Tony.Bassil@emaple.com" required>
           </div>
           <div class="form-group">
               <label for="phone-number">Phone Number:</label>
-              <input type="number" id="phone-number" name="phone-number" required>
+              <input type="number" id="phone-number" name="phone-number" placeholder="710236528" required>
           </div>
   
           <div class="form-group">
@@ -75,7 +74,7 @@
   
           <div class="form-group">
               <label for="birth-place">Place of Birth (City || Village):</label>
-              <input type="text" id="birth-place" name="birth-place" required>
+              <input type="text" id="birth-place" name="birth-place" placeholder="Write in you're ID" required>
           </div>
 
           <div class="form-group">
@@ -89,7 +88,7 @@
   
           <div class="form-group hidden" id="id-group">
               <label for="uni-id">University Short ID:</label>
-              <input type="text" id="uni-id" name="uni-id">
+              <input type="text" id="uni-id" name="uni-id" placeholder="710236">
           </div>
 
           <div class="form-group hidden" id="branch-group">
@@ -197,16 +196,32 @@
       </footer>
 
 
-    <script>
-      function getQueryParameter(name) {
-          const urlParams = new URLSearchParams(window.location.search);
-          return urlParams.get(name);
-      }
-      const status = getQueryParameter('status');
-      if (status == 'premium') {
-          document.getElementById("membershipTitle").textContent = "Premium JOIN";
-      }
-  </script>
+      <script>
+        function getQueryParameter(name) {
+            const urlParams = new URLSearchParams(window.location.search);
+            return urlParams.get(name);
+        }
+      
+        function updateFormTitleAndSubject(status) {
+            const membershipTitle = document.getElementById("membershipTitle");
+            const subjectInput = document.getElementById("subject");
+      
+            if (status === 'premium') {
+                membershipTitle.textContent = "Join";
+                subjectInput.value = "New IEEE JOIN FORM website";
+            } else if (status === 'membership-card') {
+                membershipTitle.textContent = "Membership card";
+                subjectInput.value = "New IEEE MEMBERSHIP CARD FORM website";
+            } else {
+                // Default case
+                membershipTitle.textContent = "Renew";
+                subjectInput.value = "New IEEE RENEW FORM website";
+            }
+        }
+      
+        const status = getQueryParameter('status');
+        updateFormTitleAndSubject(status);
+      </script>
 
     <script>
       var loader = document.getElementById("preloader");

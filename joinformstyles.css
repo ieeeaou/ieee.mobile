@@ -73,7 +73,7 @@ body {
     border-radius: 5px;
     font-size: 1em;
     color: var(--color-1);
-    font-family: 'Courier New', Courier, monospace;
+    font-family: 'Times New Roman', Times, serif;
 }
 
 .form-group input[type="date"],

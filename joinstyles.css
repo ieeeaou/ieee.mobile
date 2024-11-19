@@ -80,7 +80,7 @@ main {
 
 .close-btn {
   position: fixed;
-  top: 10px;
+  top: 50px;
   right: 10px;
   font-size: 32px;
   color: var(--color-2);
